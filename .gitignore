@@ -6,6 +6,7 @@ build/
 .vscode/
 *.iws, *.ipr
 *.jar, *.war, *.ear
+*.swp
 *.class
 .gradle/
 bin/
