@@ -19,7 +19,7 @@ public class HelloWorldControllerTests {
     void home() {
         restTestClient.get().uri("/")
                 .exchange()
-                .expectStatus().isAccepted()
+                .expectStatus().isOk()
                 .expectBody(String.class)
                 .isEqualTo("Hello, World");
     }
