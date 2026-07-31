@@ -8,9 +8,6 @@ permissions:
 
 jobs:
   docker-publish:
-    # Only publish if build succeeded
-    if: github.ref == 'refs/heads/main'
-
     runs-on: ubuntu-latest
 
     steps:
