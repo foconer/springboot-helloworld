@@ -23,5 +23,4 @@ public class HelloWorldControllerTests {
                 .expectBody(String.class)
                 .isEqualTo("Hello, World");
     }
-
 }
