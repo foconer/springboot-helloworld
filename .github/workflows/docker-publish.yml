@@ -8,7 +8,6 @@ permissions:
 
 jobs:
   docker-publish:
-    # Only publish if build succeeded
     if: github.ref == 'refs/heads/main'
 
     runs-on: ubuntu-latest
@@ -32,4 +31,4 @@ jobs:
           push: true
           tags: |
             foconer/springboot-helloworld:latest
-            foconer/springboot-helloworld:${{ github.event.workflow_run.head_sha }}
+            foconer/springboot-helloworld:${{ github.sha }}
