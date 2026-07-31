@@ -1,13 +1,7 @@
 name: Docker Publish
 
 on:
-  workflow_run:
-    workflows:
-      - Spring Boot Build and Test
-    types:
-      - completed
-    branches:
-      - main
+  workflow_dispatch:
 
 permissions:
   contents: read
