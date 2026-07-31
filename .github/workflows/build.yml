@@ -27,12 +27,6 @@ jobs:
           distribution: "temurin"
           cache: gradle
 
-      # Setup Gradle 9.3
-      - name: Setup Gradle
-        uses: gradle/actions/setup-gradle@v4
-        with:
-          gradle-version: "9.3"
-
       # Make Gradle wrapper executable
       - name: Make gradlew executable
         run: chmod +x ./gradlew
