@@ -15,4 +15,5 @@ class HelloWorldApplicationTests {
 	void contextLoads() {
 		Assertions.assertThat(controller).isNotNull();
 	}
+
 }
